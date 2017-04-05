@@ -1,3 +1,6 @@
 javascript:(function () {
-    $('.question_description code').css({'padding': 0});
+    $('<style>')
+        .prop('type', 'text/css')
+        .html('.question_description code {padding: 0;}')
+        .appendTo('head');
 }());
